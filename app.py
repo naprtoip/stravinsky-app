@@ -11,7 +11,7 @@ st.set_page_config(page_title="Stravinsky Masterclass v1.5", layout="centered")
 # Link al logo del Conservatorio di Milano (URL pubblico)
 LOGO_URL = "https://www.consmilano.it/wp-content/uploads/2021/03/logo-conservatorio-milano.png"
 
-st.image(LOGO_URL, width=150)
+st.image("logo.png", width=180)
 st.title("🎼 Stravinsky Masterclass")
 st.subheader("Conservatorio di Musica G. Verdi di Milano")
 
@@ -98,3 +98,4 @@ with st.sidebar:
         if os.path.exists(path):
             shutil.rmtree(path)
             st.warning("File eliminati.")
+
